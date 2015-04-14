@@ -1,0 +1,33 @@
+[alias]
+  st = status
+  ci = commit -v
+  sp = smart-pull
+  sm = smart-merge
+  co = checkout
+  df = difftool
+  mg = mergetool
+[user]
+	email = crazyflapjack@gmail.com
+	name = hpyhacking
+[push]
+	default = simple
+[color]
+	ui = always
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	keepBackup = false
+[diff]
+	tool = Kaleidoscope
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore

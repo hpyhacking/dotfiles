@@ -1,0 +1,7 @@
+export LANG="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export POW_WORKERS=4
+export POW_EXT_DOMAINS=com
+
+eval $(rbenv init -)
+export PATH="/usr/local/opt/rbenv/shims:/usr/local/opt/rbenv/bin:$PATH"
