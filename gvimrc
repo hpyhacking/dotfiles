@@ -1,6 +1,13 @@
 set guioptions=ce
 set antialias
 
+" Tab navigation settings
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabnext<CR>
+nnoremap tk :tabprev<CR>
+nnoremap tl :tablast<CR>
+nnoremap td :tabclose<CR>
+
 " Color scheme
 " set background=dark
 colorscheme solarized
