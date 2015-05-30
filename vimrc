@@ -25,30 +25,23 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'hpyhacking/vim-rails'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
-Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'slim-template/vim-slim'
-Bundle 'tpope/vim-dispatch'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/genutils'
-Bundle 'groenewege/vim-less'
-Bundle 'jimenezrick/vimerl'
-Bundle 'nono/vim-handlebars'
 Bundle 'junegunn/goyo.vim'
-Bundle 'mtscout6/vim-cjsx'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'msanders/snipmate.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'hpyhacking/vim-rails'
+Bundle 'vim-scripts/genutils'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'sheerun/vim-polyglot'
 
 filetype plugin indent on
+
 
 augroup vimrcEx
   au!
@@ -111,9 +104,6 @@ noremap <Right> <NOP>
 nnoremap 0 ^
 nnoremap ^ 0
 
-" Snippets are activated by Shift+Tab
-let g:snippetsEmu_key = "<S-Tab>"
-
 " EasyMotion
 let g:EasyMotion_leader_key = '\'
 let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz'
@@ -160,13 +150,8 @@ set wildignore+=*.jpg,*.png,*.beam,*.dump,*.log
 
 " Snippets reload when saving
 autocmd! BufWritePost *.snippets call ReloadAllSnippets()
-
-" rspec mappings
-map <silent>,t :!rake<CR>
-map <silent>,s :!rake spec/* <CR>
-
-au BufRead,BufNewFile *.slim set filetype=slim
-au BufRead,BufNewFile *.eco  set filetype=eruby.html
+" Snippets are activated by Shift+Tab
+let g:snippetsEmu_key = "<S-Tab>"
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")

@@ -5,10 +5,14 @@
 --type-add=yml=.yml
 --ignore-dir=deps
 --ignore-dir=rel
+--ignore-dir=.bundle
 --ignore-dir=.eunit
 --ignore-dir=vendor/bundle
 --ignore-dir=vendor/assets
 --ignore-dir=public/assets
+--ignore-dir=theme/assets
+--ignore-dir=theme/vendors
+--ignore-dir=_book
 --ignore-dir=log
 --ignore-dir=bin
 --ignore-dir=tmp
