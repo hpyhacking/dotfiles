@@ -10,6 +10,7 @@
 --ignore-dir=vendor/bundle
 --ignore-dir=vendor/assets
 --ignore-dir=public/assets
+--ignore-dir=lib/assets
 --ignore-dir=theme/assets
 --ignore-dir=theme/vendors
 --ignore-dir=_book

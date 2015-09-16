@@ -1,6 +1,6 @@
 function set_proxy {
-  export HTTP_PROXY='http://theironislands.f.getqujing.net:28044'
-  export HTTPS_PROXY='http://theironislands.f.getqujing.net:28044'
+  export HTTP_PROXY='127.0.0.1:1080'
+  export HTTPS_PROXY='127.0.0.1:1080'
 }
 
 function unset_proxy {

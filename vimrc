@@ -28,17 +28,17 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'junegunn/goyo.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
+Bundle 'sheerun/vim-polyglot'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'msanders/snipmate.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'hpyhacking/vim-rails'
 Bundle 'vim-scripts/genutils'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'sheerun/vim-polyglot'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-rails'
 
 filetype plugin indent on
 
@@ -142,9 +142,9 @@ let NERDTreeShowBookmarks=0
 let g:NERDTreeWinSize=22
 let g:nerdtree_tabs_focus_on_files=1
 let g:nerdtree_tabs_open_on_gui_startup=0
-let NERDTreeIgnore = ['build$', 'bower_components$', 'node_modules$', 'bin$']
+let NERDTreeIgnore = ['build$', 'bower_components$', 'node_modules$']
 
-set wildignore+=log,Mnesia.*,ebin,bin,.git,tmp
+set wildignore+=log,Mnesia.*,ebin,.git,tmp
 set wildignore+=*.jpg,*.png,*.beam,*.dump,*.log
 " =================================================
 
