@@ -1,7 +1,7 @@
 function start_mongodb {
-  mongod --config /usr/local/etc/mongod.conf
+  launchctl load /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist
 }
 
 function stop_mongodb {
-  mongod --config /usr/local/etc/mongod.conf
+  launchctl unload /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist
 }
