@@ -39,6 +39,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
+Bundle 'othree/yajs.vim'
 
 filetype plugin indent on
 
@@ -157,3 +158,6 @@ let g:snippetsEmu_key = "<S-Tab>"
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" ES6 to javascript
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
