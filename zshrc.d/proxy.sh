@@ -5,14 +5,12 @@ function start_ss_proxy {
   launchctl load /usr/local/opt/shadowsocks-libev/homebrew.mxcl.shadowsocks-tunnel.plist
   launchctl load /usr/local/opt/shadowsocks-libev/homebrew.mxcl.shadowsocks-libev.plist
   sudo launchctl load /usr/local/opt/dnsmasq/homebrew.mxcl.dnsmasq.plist
-  sudo networksetup -switchtolocation GFW
 }
 
 function stop_ss_proxy {
   launchctl unload /usr/local/opt/shadowsocks-libev/homebrew.mxcl.shadowsocks-tunnel.plist
   launchctl unload /usr/local/opt/shadowsocks-libev/homebrew.mxcl.shadowsocks-libev.plist
   sudo launchctl unload /usr/local/opt/dnsmasq/homebrew.mxcl.dnsmasq.plist
-  sudo networksetup -switchtolocation Automatic
 }
 
 function set_http_proxy {

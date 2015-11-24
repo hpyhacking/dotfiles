@@ -1,0 +1,32 @@
+patch:
+  style:
+    color_scheme: google
+    corner_radius: 2
+    spacing: 8
+    font_face: 'HiraginoSansGB'
+    font_point: 22
+  app_options:
+    com.apple.Spotlight:
+      ascii_mode: true
+      no_inline: true
+    com.apple.finder:
+      ascii_mode: true
+      no_inline: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      no_inline: true
+    org.vim.MacVim:
+      ascii_mode: true
+      no_inline: true
+    com.eusoft.eudic:
+      ascii_mode: true
+      no_inline: true
+    com.agilebits.onepassword-osx:
+      ascii_mode: true
+      no_inline: true
+    com.kapeli.dash:
+      ascii_mode: true
+      no_inline: true
+    com.google.Chrome:
+      ascii_mode: true
+      no_inline: true

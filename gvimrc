@@ -23,9 +23,9 @@ endif
 highlight Comment gui=italic
 
 " disable IM while leaving insert mode
-set noimdisable
-autocmd! InsertLeave * set imdisable|set iminsert=0
-autocmd! InsertEnter * set noimdisable|set iminsert=0
+" set noimdisable
+" autocmd! InsertLeave * set imdisable|set iminsert=0
+" autocmd! InsertEnter * set noimdisable|set iminsert=0
 
 " set fancy font for powerline
 let g:Powerline_symbols='fancy'
