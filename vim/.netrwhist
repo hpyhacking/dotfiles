@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/jack/Codes/yunbi/site_src'
+let g:netrw_dirhist_2='/Users/jack/Codes/bitunm/spy/lib/spy'
+let g:netrw_dirhist_3='/Users/jack/.oh-my-zsh/plugins/vi-mode'
+let g:netrw_dirhist_4='/Users/hpyhacking/Codes/yunbi/db/migrate'
+let g:netrw_dirhist_5='/Users/hpyhacking/Codes/antshares-ruby/lib/ant/wallet'
+let g:netrw_dirhist_6='/Users/hpyhacking/.gem'
+let g:netrw_dirhist_7='/usr/local/Cellar/rbenv/0.4.0/versions/2.2.0/lib/ruby/gems/2.2.0/gems/aasm-3.4.0'
+let g:netrw_dirhist_8='/Users/hpyhacking/Codes/antshares-ruby/lib/ant/wallet'
+let g:netrw_dirhist_9='/Users/hpyhacking/Codes/yunbi/app/models/kyc'
