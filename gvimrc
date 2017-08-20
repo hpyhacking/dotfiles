@@ -9,16 +9,10 @@ nnoremap tl :tablast<CR>
 nnoremap td :tabclose<CR>
 
 " Color scheme
-" set background=dark
+set background=dark
 colorscheme solarized
 
-if has('mac')
-  if system("osascript -e 'tell application \"Finder\" to get bounds of window of desktop' | cut -d ' ' -f 4") > 900
-    set guifont=Essential\ PragmataPro:h24
-  else
-    set guifont=Essential\ PragmataPro:h20
-  endif
-endif
+set guifont=PragmataPro\ Mono:h24
 
 highlight Comment gui=italic
 
@@ -27,7 +21,7 @@ highlight Comment gui=italic
 " autocmd! InsertLeave * set imdisable|set iminsert=0
 " autocmd! InsertEnter * set noimdisable|set iminsert=0
 
-" set fancy font for powerline
-let g:Powerline_symbols='fancy'
-
-set transparency=1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_theme='distinguished'
+let g:airline#extensions#whitespace#enabled = 0

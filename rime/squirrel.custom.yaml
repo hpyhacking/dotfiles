@@ -9,6 +9,9 @@ patch:
     com.apple.Spotlight:
       ascii_mode: true
       no_inline: true
+    com.apple.Terminal:
+      ascii_mode: true
+      no_inline: true
     com.apple.finder:
       ascii_mode: true
       no_inline: true
@@ -27,6 +30,12 @@ patch:
     com.kapeli.dash:
       ascii_mode: true
       no_inline: true
+    com.kapeli.dashdoc:
+      ascii_mode: true
+      no_inline: true
     com.google.Chrome:
+      ascii_mode: true
+      no_inline: true
+    com.prect.NavicatPremium12:
       ascii_mode: true
       no_inline: true

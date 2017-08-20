@@ -43,3 +43,4 @@ if [ -d $HOME/.zshrc.d ]; then
     source $file
   done
 fi
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
