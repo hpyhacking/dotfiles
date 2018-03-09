@@ -23,7 +23,7 @@ for name in *; do
       fi
     fi
   else
-    if [ "$name" != 'install.sh' ] && [ "$name" != 'README.md' ] && [ "$name" != '.gitignore' ]; then
+    if [ "$name" != 'archives' ] && [ "$name" != 'install.sh' ] && [ "$name" != 'README.md' ] && [ "$name" != '.gitignore' ]; then
       echo "Creating $target"
       if [ -n "$(grep "$cutstring" "$name")" ]; then
         cp "$PWD/$name" "$target"
@@ -33,6 +33,3 @@ for name in *; do
     fi
   fi
 done
-
-#git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-#vim +BundleInstall +qa
