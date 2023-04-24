@@ -29,7 +29,7 @@ ZSH_THEME="simple"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github osx)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,7 +43,5 @@ if [ -d $HOME/.zshrc.d ]; then
     source $file
   done
 fi
+
 export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
